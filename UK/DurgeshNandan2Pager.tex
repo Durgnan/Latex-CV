@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Durgesh Nandan} \\ \vspace{1pt}
+    \small +44 7776071886 $|$ Birmingham, United Kingdom \\ \href{mailto:durgnan45@gmail.com}{\underline{durgnan45@gmail.com}} $|$ \href{https://durgnan.github.io}{\underline{Portfolio}} $|$ 
+    \href{https://www.linkedin.com/in/durgesh-nandan-75a80b140}{\underline{LinkedIn}} $|$
+    \href{https://github.com/durgnan}{\underline{Github}} $|$
+    \href{https://leetcode.com/durgnan/}{\underline{Leetcode}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Birmingham}{Birmingham, UK}
+      {Master of Science in Advanced Computer Science}{Sept. 2023 -- Sept. 2024}
+    \resumeSubheading
+      {Visvesvaraya Technological University}{Belagavi, IN}
+      {Bachelor of Engineering in Computer Science and Engineering}{Aug. 2016 -- Aug. 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Software Developer}{June 2023 -- Aug. 2023}
+      {Quantiphi}{Bengaluru, IN}
+      \resumeItemListStart
+        \resumeItem{Designed and engineered an RDP (Remote Desktop) service catering to Nvidia and ICI team requirements, facilitating remote machine management in geographically isolated client locations.}
+        \resumeItem{Introduced AWS Services (eg. API Gateway, IOT Core, OpenSSH) and the MEAN Stack for the development of this solution.}
+        \resumeItem{Notably, Completed the project ahead of schedule, allowing for a buffer of approximately two months for thorough multi-stage testing and any ad hoc modifications.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Full Stack Developer (Member of Technical Staff)}{Apr. 2022 -- May 2023}
+      {AXIO Finance}{Bengaluru, IN}
+      \resumeItemListStart
+        \resumeItem{Spearheaded the design and development of the \textbf{Tata Pay Later Frontend}, \textbf{managing traffic} due to a \textbf{large customer base}}
+        \resumeItem{Implemented significant contributions to the \textbf{UI/UX} and feature enhancements for \textbf{Amazon Pay Later/AXIO.}}
+        \resumeItem{Led the \textbf{rebranding} efforts for the Frontend during the transition from \textbf{Capital Float to AXIO.}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{July 2020 -- Apr. 2022}
+      {Synamedia}{Bengaluru, IN}
+      \resumeItemListStart
+        \resumeItem{Created, developed, and rigorously tested an \textbf{Automatic Notice and Takedown System} aimed at identifying and addressing pirated content across OTT, DTH, and other platforms. This involved sending legal notices in stages of escalation for persistent offenders.}
+        \resumeItem{Developed and tested a comprehensive product from the ground up, utilizing \textbf{MERN/MEAN Stack} technologies.}
+        \resumeItem{Developed the backend server and \textbf{REST APIs}, leveraging \textbf{NodeJS} and \textbf{ExpressJS}, while maintaining API documentation through \textbf{Swagger.}}
+        \resumeItem{Employed \textbf{Docker} for containerizing full-stack applications, ensuring swift builds and cloud deployment.}
+        \resumeItem{Transformed wireframes and prototypes into visually appealing and user-friendly web applications.}
+        \resumeItem{Executed rigorous multi-stage testing encompassing diverse scenarios, utilizing test beds and stubs, and organized test documents within \textbf{Confluence.}}
+        \resumeItem{Gathered and comprehended business requirements from clients and colleagues, proceeding to design, develop, and maintain versions and releases.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Orca} $|$ \emph{Mongo DB, Express JS, React, NodeJS, AWS, Google Analytics}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a Analytics Website as a personal project that can identify and address pirated content across OTT, Telegram, and other social media sources.}
+            \resumeItem{Generates trend graphs and other analytical metrics for users to analyse and create report}
+            \resumeItem{Implemented an experimental feature enabling the scheduling of cron jobs to send routine emails. Initially designed the email content in HTML on the server, subsequently parsing and delivering.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{MedApp} $|$ \emph{Java, Android, AWS, Firebase, GCP}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a mobile application enabling victims and nearby citizens to send emergency alarm messages swiftly.}
+            \resumeItem{Implemented real-time location tracking to identify the nearest healthcare providers, including ambulances.}
+            \resumeItem{Enabled notifications to be sent to nearby healthcare workers, requesting assistance during emergencies.}
+            \resumeItem{Included a feature offering first aid tips for immediate support during crisis situations.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C, JavaScript, HTML/CSS, Typescript} \\
+     \textbf{Frameworks}{: React, Angular, ExpressJS, Node.js, MEAN/MERN, Flask, Android, Material-UI, REST} \\
+     \textbf{Databases}{: MySQL, Oracle 11G, SQLite, MongoDB, DynamoDB, Redshift, PostgreSQL} \\
+     \textbf{Cloud}{: Google Cloud Platform, AWS, Firebase} \\
+     \textbf{Developer Tools}{: Docker, Kubernetes, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Control System, Documentations and UI Wireframing}{: Git, Jenkins, Jira, Confluence, Asana, Zeplin, Figma} \\
+     \textbf{OS}{: Windows, Linux(RedHat, CentOS), macOS}
+    }}
+ \end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Finalist, TechGig Code Gladiators 2021:}{ Advanced to the final round of the event, earning a spot in the top 100 contenders from a pool of 400,000 participants.} \\
+     \textbf{Winner, Smart India Hackathon 2020:}{ Secured victory in the Smart India Hackathon 2020 - Software Edition, emerging as the winner among more than 35,000 participating teams in the Government of India organized three-day hackathon.} \\
+     \textbf{3rd/100, Google I/O Extended AppDev Hackathon 2018}{ Achieved a notable third-place ranking among 100 teams at the 2018 Google I/O Extended AppDev Hackathon.} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
